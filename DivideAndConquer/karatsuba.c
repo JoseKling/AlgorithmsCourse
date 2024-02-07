@@ -1,3 +1,14 @@
+/*
+First programming assigment
+
+This is an implementation of Karatsuba's multiplication algorithm.
+To make things more interesting, I assumed multiplication was not
+implemented, and we needed to implement it via software using only 
+addition, summation and bit operations.
+This assumption implies we cannot use multiplication nor division,
+and base 10 is useless, so we worked with base 2, since multiplication
+and division by 2 is equivalent to a bit shift (<< and >> operators).
+*/
 #include <stdio.h>
 
 int karatsuba(int x, int y, int n) {
