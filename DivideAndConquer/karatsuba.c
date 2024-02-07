@@ -9,6 +9,7 @@ This assumption implies we cannot use multiplication nor division,
 and base 10 is useless, so we worked with base 2, since multiplication
 and division by 2 is equivalent to a bit shift (<< and >> operators).
 */
+
 #include <stdio.h>
 
 int karatsuba(int x, int y, int n) {

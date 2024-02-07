@@ -14,8 +14,10 @@ in 'merge' are just pointers to this first copy.
 In this way, there is no need to create copies of the 'left' and 'right'
 arrays in 'merge', we just use the original copy and keep it updated.
 */
+
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <math.h>
 
 void merge(int left[], int left_copy[], int len_l, int right[], int right_copy[], int len_r) {
@@ -81,6 +83,7 @@ void merge_sort(int array[], int length) {
 int main() {
     int length;
     int range;
+    srand(time(NULL));
     printf("Type the length of the array to be sorted.\n");
     scanf("%d", &length);
     printf("Array will contain integers from 0 to M. Choose M.\n");
